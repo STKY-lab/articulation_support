@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "944298492813",
+    "project_id": "articulation-supports",
+    "storage_bucket": "articulation-supports.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944298492813:android:21b07c884387a4dc2f33c4",
+        "android_client_info": {
+          "package_name": "com.example.articulation_support"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944298492813-rccmgecvvt57t8tn707rupjs26tg29jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Ao0ckYcxdbN98j3XxfLLMvkDvC1NaTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944298492813-e1l2u2gnv5dgj7iv4bmv4ridcn4ffp92.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944298492813-vcpc2j5hrfn3s5rhhdpe1ds4kr12voqp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.articulationSupport"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
