@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './screens/home.dart';
 import './screens/test.dart';
+import './screens/cards.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       home: const Home(title: 'HomePage'),
       routes: {
         Test.routeName: (context) => const Test(),
+        Cards.routeName: (context) => const Cards(),
       },
     );
   }
