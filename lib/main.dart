@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import './screens/home.dart';
-import './screens/test.dart';
+import 'screens/auth.dart';
+import './settings/routes/route.dart';
+import './settings/color/color.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -14,13 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ArticulationSupport',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const Home(title: 'HomePage'),
-      routes: {
-        Test.routeName: (context) => const Test(),
-      },
+      darkTheme: colorDataDark,
+      theme: colorDataLight,
+      themeMode: ThemeMode.system, // モードをシステム設定にする
+      home: const Auth(title: 'AuthPage'),
+      routes: route,
     );
   }
 }
