@@ -7,11 +7,3 @@ ThemeData colorDataLight = ThemeData(
     secondary: Colors.grey[300],
   ),
 );
-
-ThemeData colorDataDark = ThemeData(
-  colorScheme: ColorScheme.fromSwatch().copyWith(
-    primary: Colors.white,
-    inversePrimary: Colors.black,
-    secondary: Colors.grey[300],
-  ),
-);
