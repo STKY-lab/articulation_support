@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import './config/config.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -43,41 +44,41 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD4k6Kg1ZBfWbkM30wVxC16byqcooDhvQE',
-    appId: '1:944298492813:web:ec1deab35aedf1ed2f33c4',
-    messagingSenderId: '944298492813',
-    projectId: 'articulation-supports',
-    authDomain: 'articulation-supports.firebaseapp.com',
-    storageBucket: 'articulation-supports.appspot.com',
-    measurementId: 'G-79DQ3L4MCZ',
+  static FirebaseOptions web = FirebaseOptions(
+    apiKey: Configs.webConfigs['apiKey']!,
+    appId: Configs.webConfigs['appId']!,
+    messagingSenderId: Configs.webConfigs['messagingSenderId']!,
+    projectId: Configs.webConfigs['projectId']!,
+    authDomain: Configs.webConfigs['authDomain']!,
+    storageBucket: Configs.webConfigs['storageBucket']!,
+    measurementId: Configs.webConfigs['measurementId']!,
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC0Ao0ckYcxdbN98j3XxfLLMvkDvC1NaTU',
-    appId: '1:944298492813:android:21b07c884387a4dc2f33c4',
-    messagingSenderId: '944298492813',
-    projectId: 'articulation-supports',
-    storageBucket: 'articulation-supports.appspot.com',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: Configs.androidConfigs['apiKey']!,
+    appId: Configs.androidConfigs['appId']!,
+    messagingSenderId: Configs.androidConfigs['messagingSenderId']!,
+    projectId: Configs.androidConfigs['projectId']!,
+    storageBucket: Configs.androidConfigs['storageBucket']!,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyByiOonW0dIb7VHC8ABE6kqqtHoxa9X300',
-    appId: '1:944298492813:ios:3f419d7aa921016d2f33c4',
-    messagingSenderId: '944298492813',
-    projectId: 'articulation-supports',
-    storageBucket: 'articulation-supports.appspot.com',
-    iosClientId: '944298492813-vcpc2j5hrfn3s5rhhdpe1ds4kr12voqp.apps.googleusercontent.com',
-    iosBundleId: 'com.example.articulationSupport',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: Configs.iosConfigs['apiKey']!,
+    appId: Configs.iosConfigs['appId']!,
+    messagingSenderId: Configs.iosConfigs['messagingSenderId']!,
+    projectId: Configs.iosConfigs['projectId']!,
+    storageBucket: Configs.iosConfigs['storageBucket']!,
+    iosClientId: Configs.iosConfigs['iosClientId']!,
+    iosBundleId: Configs.iosConfigs['iosBundleId']!,
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyByiOonW0dIb7VHC8ABE6kqqtHoxa9X300',
-    appId: '1:944298492813:ios:3f419d7aa921016d2f33c4',
-    messagingSenderId: '944298492813',
-    projectId: 'articulation-supports',
-    storageBucket: 'articulation-supports.appspot.com',
-    iosClientId: '944298492813-vcpc2j5hrfn3s5rhhdpe1ds4kr12voqp.apps.googleusercontent.com',
-    iosBundleId: 'com.example.articulationSupport',
+  static FirebaseOptions macos = FirebaseOptions(
+    apiKey: Configs.macConfigs['apiKey']!,
+    appId: Configs.macConfigs['appId']!,
+    messagingSenderId: Configs.macConfigs['messagingSenderId']!,
+    projectId: Configs.macConfigs['projectId']!,
+    storageBucket: Configs.macConfigs['storageBucket']!,
+    iosClientId: Configs.macConfigs['iosClientId']!,
+    iosBundleId: Configs.macConfigs['iosBundleId']!,
   );
 }
