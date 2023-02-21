@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>944298492813-vcpc2j5hrfn3s5rhhdpe1ds4kr12voqp.apps.googleusercontent.com</string>
+	<string>846023255099-lldqa1n4olb7qals7jc68lk5lr9kffe9.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.944298492813-vcpc2j5hrfn3s5rhhdpe1ds4kr12voqp</string>
+	<string>com.googleusercontent.apps.846023255099-lldqa1n4olb7qals7jc68lk5lr9kffe9</string>
 	<key>API_KEY</key>
-	<string>AIzaSyByiOonW0dIb7VHC8ABE6kqqtHoxa9X300</string>
+	<string>AIzaSyCHbB9xElGIId28UXa_Rhew1SUOGguMGtw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>944298492813</string>
+	<string>846023255099</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.articulationSupport</string>
 	<key>PROJECT_ID</key>
-	<string>articulation-supports</string>
+	<string>articulations-support</string>
 	<key>STORAGE_BUCKET</key>
-	<string>articulation-supports.appspot.com</string>
+	<string>articulations-support.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:944298492813:ios:3f419d7aa921016d2f33c4</string>
+	<string>1:846023255099:ios:f76847734685535772681e</string>
 </dict>
 </plist>
