@@ -5,7 +5,7 @@ const categoryData = [
   Categories(
     category: "drink",
     title: "飲み物",
-    color: Colors.redAccent,
+    color: Colors.white,
     iconData: Icons.local_drink,
   ),
   Categories(
