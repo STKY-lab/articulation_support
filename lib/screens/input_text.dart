@@ -170,10 +170,10 @@ class _InputTextState extends State<InputText> {
       );
     }
 
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        body: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primary,
+      body: SafeArea(
+        child: SingleChildScrollView(
           child: Column(
             children: [
               FittedBox(

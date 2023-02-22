@@ -14,10 +14,10 @@ class Home extends ConsumerWidget {
     final deviceHeight =
         MediaQuery.of(context).size.height - AppBar().preferredSize.height;
     final deviceWidth = MediaQuery.of(context).size.width;
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        body: GridView(
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primary,
+      body: SafeArea(
+        child: GridView(
           padding: const EdgeInsets.all(8),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
@@ -35,8 +35,8 @@ class Home extends ConsumerWidget {
               )
               .toList(),
         ),
-        // backgroundColor: Theme.of(context).colorScheme.primary,
       ),
+      // backgroundColor: Theme.of(context).colorScheme.primary,
     );
   }
 }
