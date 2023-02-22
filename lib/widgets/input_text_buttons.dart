@@ -11,28 +11,31 @@ class InputTextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Theme.of(context).colorScheme.secondary,
-            spreadRadius: 0,
-            blurRadius: 70,
-            offset: const Offset(0, 10),
-          ),
-        ],
-      ),
-      child: ElevatedButton(
-        onPressed: () => buttonFunction(),
-        onLongPress: () => buttonFunction(),
-        style: ElevatedButton.styleFrom(
-          elevation: 5,
-          backgroundColor: Theme.of(context).colorScheme.primary,
-          shape: const CircleBorder(),
-          minimumSize: const Size(50, 50),
-          maximumSize: const Size(100, 100),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 7),
+      child: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Theme.of(context).colorScheme.secondary,
+              spreadRadius: 0,
+              blurRadius: 70,
+              offset: const Offset(0, 10),
+            ),
+          ],
         ),
-        child: buttonChild,
+        child: ElevatedButton(
+          onPressed: () => buttonFunction(),
+          onLongPress: () => buttonFunction(),
+          style: ElevatedButton.styleFrom(
+            elevation: 5,
+            backgroundColor: Theme.of(context).colorScheme.primary,
+            shape: const CircleBorder(),
+            minimumSize: const Size(50, 50),
+            maximumSize: const Size(100, 100),
+          ),
+          child: buttonChild,
+        ),
       ),
     );
   }
