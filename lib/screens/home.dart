@@ -27,10 +27,10 @@ class Home extends ConsumerWidget {
           children: categoryData
               .map(
                 (categoryData) => CategoryItem(
-                  category: categoryData.category,
-                  title: categoryData.title,
-                  color: categoryData.color,
-                  iconData: categoryData.iconData,
+                  category: categoryData.category!,
+                  title: categoryData.title!,
+                  color: categoryData.color!,
+                  iconData: categoryData.iconData!,
                 ),
               )
               .toList(),
