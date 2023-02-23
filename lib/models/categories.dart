@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class Categories {
-  final String category;
-  final String title;
-  final Color color;
-  final IconData iconData;
+part 'categories.freezed.dart';
 
-  const Categories({
-    required this.category,
-    required this.title,
-    required this.color,
-    required this.iconData,
-  });
+@freezed
+abstract class Categories with _$Categories {
+  const factory Categories({
+    String? category,
+    String? title,
+    Color? color,
+    IconData? iconData,
+  }) = _Categories;
 }
